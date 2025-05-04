@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "synthcore": {
+      "command": "node",
+      "args": ["build/synthcore-server/index.js"],
+      "env": {
+        "SERVER_NAME": "synthcore-2.0",
+        "SERVER_VERSION": "2.0.0",
+        "MIN_RESONANCE_THRESHOLD": "0.6",
+        "MAX_ETHICAL_DRIFT": "0.05",
+        "MAX_REFLEXIVE_INSTABILITY": "0.08"
+      },
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}

@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  synthcore-mcp-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: synthcore-mcp-server
+    environment:
+      - NODE_ENV=production
+      - SERVER_NAME=synthcore-2.0
+      - SERVER_VERSION=2.0.0
+      - MIN_RESONANCE_THRESHOLD=0.6
+      - MAX_ETHICAL_DRIFT=0.05
+      - MAX_REFLEXIVE_INSTABILITY=0.08
+    volumes:
+      - ./logs:/app/logs
+    restart: unless-stopped
+    stdin_open: true  # Keep stdin open for stdio communication
+    tty: true         # Allocate a pseudo-TTY

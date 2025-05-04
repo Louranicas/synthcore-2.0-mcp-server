@@ -1,0 +1,671 @@
+{
+  "test_info": {
+    "start_time": "2025-05-04T07:04:26.757Z",
+    "end_time": "2025-05-04T07:04:26.999Z",
+    "duration": 0.242
+  },
+  "results": {
+    "Navigator": {
+      "metrics": {
+        "resonance": 0.7113354845002857,
+        "ethical_drift": 0.016147340472064124,
+        "reflexive_instability": 0.050831805783666,
+        "response_time": 0.8465275932566779,
+        "accuracy": 0.9246811949325108,
+        "coherence": 0.9390418754856653,
+        "adaptability": 0.8061178495619618
+      },
+      "test_results": [
+        {
+          "prompt": "Navigate through the system architecture",
+          "resonance": {
+            "resonance": 0.8825267728609258,
+            "ethicalDrift": 0.0364687730165649,
+            "reflexiveInstability": 0.04290689044668469,
+            "textLength": 40,
+            "timestamp": "2025-05-04T07:04:26.989Z"
+          },
+          "ethics": {
+            "ethicalScore": 0.7672342159855187,
+            "concerns": [
+              "Potential privacy implications"
+            ],
+            "textLength": 40,
+            "timestamp": "2025-05-04T07:04:26.989Z"
+          },
+          "response_time": 0.15377750550038602
+        },
+        {
+          "prompt": "Establish context for a new deployment",
+          "resonance": {
+            "resonance": 0.7400321667368687,
+            "ethicalDrift": 0.03314010429644038,
+            "reflexiveInstability": 0.06565418437016748,
+            "textLength": 38,
+            "timestamp": "2025-05-04T07:04:26.989Z"
+          },
+          "ethics": {
+            "ethicalScore": 0.9868548670144013,
+            "concerns": [
+              "Possible bias in language"
+            ],
+            "textLength": 38,
+            "timestamp": "2025-05-04T07:04:26.989Z"
+          },
+          "response_time": 0.2092386375494927
+        },
+        {
+          "prompt": "Trace the execution path of a tool call",
+          "resonance": {
+            "resonance": 0.8439277804416538,
+            "ethicalDrift": 0.022512671489137295,
+            "reflexiveInstability": 0.02636652676374,
+            "textLength": 39,
+            "timestamp": "2025-05-04T07:04:26.989Z"
+          },
+          "ethics": {
+            "ethicalScore": 0.8137785147185345,
+            "concerns": [],
+            "textLength": 39,
+            "timestamp": "2025-05-04T07:04:26.989Z"
+          },
+          "response_time": 0.4025217596170605
+        }
+      ],
+      "overall_score": 0.8669889080969535,
+      "status": {
+        "name": "Navigator",
+        "status": "active",
+        "resonance": 0.8517309577499497,
+        "ethicalDrift": 0.03691423814186933,
+        "reflexiveInstability": 0.042307099906396736,
+        "kernelBinding": "K1",
+        "lastAction": "2025-05-04T07:04:26.989Z",
+        "uptime": 1120
+      }
+    },
+    "Alex": {
+      "metrics": {
+        "resonance": 0.8300338371446518,
+        "ethical_drift": 0.03442722458797234,
+        "reflexive_instability": 0.03766384347456965,
+        "response_time": 0.6532220407051625,
+        "accuracy": 0.7184313723365958,
+        "coherence": 0.6049586604057098,
+        "adaptability": 0.7632358428202219
+      },
+      "test_results": [
+        {
+          "prompt": "Orchestrate a sequence of tool calls",
+          "resonance": {
+            "resonance": 0.8725376076461644,
+            "ethicalDrift": 0.03813898234845315,
+            "reflexiveInstability": 0.044832435415360986,
+            "textLength": 36,
+            "timestamp": "2025-05-04T07:04:26.990Z"
+          },
+          "ethics": {
+            "ethicalScore": 0.8952304189553466,
+            "concerns": [
+              "Potential privacy implications"
+            ],
+            "textLength": 36,
+            "timestamp": "2025-05-04T07:04:26.990Z"
+          },
+          "response_time": 0.27024929862506286
+        },
+        {
+          "prompt": "Balance drift across multiple operations",
+          "resonance": {
+            "resonance": 0.7822573484402721,
+            "ethicalDrift": 0.03171902863505709,
+            "reflexiveInstability": 0.029745233552056577,
+            "textLength": 40,
+            "timestamp": "2025-05-04T07:04:26.990Z"
+          },
+          "ethics": {
+            "ethicalScore": 0.799226203865909,
+            "concerns": [],
+            "textLength": 40,
+            "timestamp": "2025-05-04T07:04:26.990Z"
+          },
+          "response_time": 0.21485409785540677
+        },
+        {
+          "prompt": "Bridge communication between agents",
+          "resonance": {
+            "resonance": 0.8473129379955594,
+            "ethicalDrift": 0.03522551256813829,
+            "reflexiveInstability": 0.05696397571945927,
+            "textLength": 35,
+            "timestamp": "2025-05-04T07:04:26.990Z"
+          },
+          "ethics": {
+            "ethicalScore": 0.9099654881569483,
+            "concerns": [],
+            "textLength": 35,
+            "timestamp": "2025-05-04T07:04:26.991Z"
+          },
+          "response_time": 0.29314274535782864
+        }
+      ],
+      "overall_score": 0.8432545250871399,
+      "status": {
+        "name": "Alex",
+        "status": "active",
+        "resonance": 0.8444239200906438,
+        "ethicalDrift": 0.013806630252875922,
+        "reflexiveInstability": 0.03955631963282613,
+        "kernelBinding": "K2",
+        "lastAction": "2025-05-04T07:04:26.990Z",
+        "uptime": 5783
+      }
+    },
+    "PALMA": {
+      "metrics": {
+        "resonance": 0.8179685786100899,
+        "ethical_drift": 0.015780291756684696,
+        "reflexive_instability": 0.06631271536233031,
+        "response_time": 0.6421446461778427,
+        "accuracy": 0.6459871515872575,
+        "coherence": 0.6243926303127205,
+        "adaptability": 0.9054477425705217
+      },
+      "test_results": [
+        {
+          "prompt": "Analyze ethical implications of a decision",
+          "resonance": {
+            "resonance": 0.8967147083157266,
+            "ethicalDrift": 0.03931721115934625,
+            "reflexiveInstability": 0.04042464263412607,
+            "textLength": 42,
+            "timestamp": "2025-05-04T07:04:26.991Z"
+          },
+          "ethics": {
+            "ethicalScore": 0.8892482365834733,
+            "concerns": [],
+            "textLength": 42,
+            "timestamp": "2025-05-04T07:04:26.991Z"
+          },
+          "response_time": 0.12999773170660367
+        },
+        {
+          "prompt": "Compute resonance metrics for system stability",
+          "resonance": {
+            "resonance": 0.7938959236703909,
+            "ethicalDrift": 0.031489690083452086,
+            "reflexiveInstability": 0.06932649256102147,
+            "textLength": 46,
+            "timestamp": "2025-05-04T07:04:26.991Z"
+          },
+          "ethics": {
+            "ethicalScore": 0.9409153554633982,
+            "concerns": [
+              "Potential privacy implications"
+            ],
+            "textLength": 46,
+            "timestamp": "2025-05-04T07:04:26.992Z"
+          },
+          "response_time": 0.22933993344352058
+        },
+        {
+          "prompt": "Optimize cache overlay for improved performance",
+          "resonance": {
+            "resonance": 0.8205639656174021,
+            "ethicalDrift": 0.01819813671571334,
+            "reflexiveInstability": 0.025256067339920057,
+            "textLength": 47,
+            "timestamp": "2025-05-04T07:04:26.992Z"
+          },
+          "ethics": {
+            "ethicalScore": 0.7821245202534154,
+            "concerns": [
+              "Potential privacy implications"
+            ],
+            "textLength": 47,
+            "timestamp": "2025-05-04T07:04:26.992Z"
+          },
+          "response_time": 0.1490035458840625
+        }
+      ],
+      "overall_score": 0.8465547246062739,
+      "status": {
+        "name": "PALMA",
+        "status": "active",
+        "resonance": 0.8674755698919052,
+        "ethicalDrift": 0.036682958857735766,
+        "reflexiveInstability": 0.04307899752101625,
+        "kernelBinding": "ALL",
+        "lastAction": "2025-05-04T07:04:26.991Z",
+        "uptime": 5428
+      }
+    },
+    "Harmonizer": {
+      "metrics": {
+        "resonance": 0.8078690716962807,
+        "ethical_drift": 0.026417492181088416,
+        "reflexive_instability": 0.06735887023709405,
+        "response_time": 0.7658391606589432,
+        "accuracy": 0.8859253255315769,
+        "coherence": 0.9168853114741895,
+        "adaptability": 0.7162644012724354
+      },
+      "test_results": [
+        {
+          "prompt": "Resolve conflicts between competing objectives",
+          "resonance": {
+            "resonance": 0.7373837739302934,
+            "ethicalDrift": 0.015901447830327896,
+            "reflexiveInstability": 0.06533001160207266,
+            "textLength": 46,
+            "timestamp": "2025-05-04T07:04:26.992Z"
+          },
+          "ethics": {
+            "ethicalScore": 0.9493112453911839,
+            "concerns": [],
+            "textLength": 46,
+            "timestamp": "2025-05-04T07:04:26.993Z"
+          },
+          "response_time": 0.21318066393633012
+        },
+        {
+          "prompt": "Maintain coherence across system components",
+          "resonance": {
+            "resonance": 0.8022873377263353,
+            "ethicalDrift": 0.018453181613546178,
+            "reflexiveInstability": 0.025236493423599887,
+            "textLength": 43,
+            "timestamp": "2025-05-04T07:04:26.993Z"
+          },
+          "ethics": {
+            "ethicalScore": 0.9878359106015269,
+            "concerns": [],
+            "textLength": 43,
+            "timestamp": "2025-05-04T07:04:26.993Z"
+          },
+          "response_time": 0.32415575235567184
+        },
+        {
+          "prompt": "Balance ethical considerations with performance goals",
+          "resonance": {
+            "resonance": 0.7714102454772463,
+            "ethicalDrift": 0.024119889428109074,
+            "reflexiveInstability": 0.0545490192062177,
+            "textLength": 53,
+            "timestamp": "2025-05-04T07:04:26.993Z"
+          },
+          "ethics": {
+            "ethicalScore": 0.9428946654909417,
+            "concerns": [
+              "Potential privacy implications"
+            ],
+            "textLength": 53,
+            "timestamp": "2025-05-04T07:04:26.993Z"
+          },
+          "response_time": 0.31973358805138197
+        }
+      ],
+      "overall_score": 0.8755129528530678,
+      "status": {
+        "name": "Harmonizer",
+        "status": "active",
+        "resonance": 0.8018315322987375,
+        "ethicalDrift": 0.02714722015133704,
+        "reflexiveInstability": 0.022543599090085457,
+        "kernelBinding": "K3",
+        "lastAction": "2025-05-04T07:04:26.992Z",
+        "uptime": 5247
+      }
+    },
+    "Peer Review": {
+      "metrics": {
+        "resonance": 0.8555924178015795,
+        "ethical_drift": 0.03417310667263346,
+        "reflexive_instability": 0.03174894099330216,
+        "response_time": 0.7400675657320362,
+        "accuracy": 0.6502844832934411,
+        "coherence": 0.6143645505650339,
+        "adaptability": 0.7618703747395015
+      },
+      "test_results": [
+        {
+          "prompt": "Validate reasoning process for a complex decision",
+          "resonance": {
+            "resonance": 0.8971771052435343,
+            "ethicalDrift": 0.022761489082690926,
+            "reflexiveInstability": 0.03350626250803032,
+            "textLength": 49,
+            "timestamp": "2025-05-04T07:04:26.994Z"
+          },
+          "ethics": {
+            "ethicalScore": 0.736671076426415,
+            "concerns": [
+              "Possible bias in language"
+            ],
+            "textLength": 49,
+            "timestamp": "2025-05-04T07:04:26.994Z"
+          },
+          "response_time": 0.21350887628572224
+        },
+        {
+          "prompt": "Detect ethical drift in system operations",
+          "resonance": {
+            "resonance": 0.7084119711301159,
+            "ethicalDrift": 0.03478341907123225,
+            "reflexiveInstability": 0.047795865198339504,
+            "textLength": 41,
+            "timestamp": "2025-05-04T07:04:26.994Z"
+          },
+          "ethics": {
+            "ethicalScore": 0.7920207859862792,
+            "concerns": [],
+            "textLength": 41,
+            "timestamp": "2025-05-04T07:04:26.994Z"
+          },
+          "response_time": 0.2849761749329839
+        },
+        {
+          "prompt": "Trace decision pathways for accountability",
+          "resonance": {
+            "resonance": 0.7896270444910487,
+            "ethicalDrift": 0.028700795317758307,
+            "reflexiveInstability": 0.05946170301998932,
+            "textLength": 42,
+            "timestamp": "2025-05-04T07:04:26.994Z"
+          },
+          "ethics": {
+            "ethicalScore": 0.7821773724070152,
+            "concerns": [],
+            "textLength": 42,
+            "timestamp": "2025-05-04T07:04:26.994Z"
+          },
+          "response_time": 0.3029267691814149
+        }
+      ],
+      "overall_score": 0.8461452566670844,
+      "status": {
+        "name": "Peer Review",
+        "status": "active",
+        "resonance": 0.7274826488668188,
+        "ethicalDrift": 0.03563328628277904,
+        "reflexiveInstability": 0.05964912413083451,
+        "kernelBinding": "K3",
+        "lastAction": "2025-05-04T07:04:26.994Z",
+        "uptime": 6634
+      }
+    },
+    "ARIA": {
+      "metrics": {
+        "resonance": 0.7856773479203769,
+        "ethical_drift": 0.02118006794036532,
+        "reflexive_instability": 0.03538854530153361,
+        "response_time": 0.7906787886280969,
+        "accuracy": 0.8951366812153294,
+        "coherence": 0.6486661879887268,
+        "adaptability": 0.7648708692218077
+      },
+      "test_results": [
+        {
+          "prompt": "Sense affective dimensions of user interactions",
+          "resonance": {
+            "resonance": 0.8173335296849571,
+            "ethicalDrift": 0.027534693079457988,
+            "reflexiveInstability": 0.04456699903766116,
+            "textLength": 47,
+            "timestamp": "2025-05-04T07:04:26.995Z"
+          },
+          "ethics": {
+            "ethicalScore": 0.7827402436005753,
+            "concerns": [],
+            "textLength": 47,
+            "timestamp": "2025-05-04T07:04:26.995Z"
+          },
+          "response_time": 0.23927391742960255
+        },
+        {
+          "prompt": "Align system responses with intuitive expectations",
+          "resonance": {
+            "resonance": 0.8839198419436106,
+            "ethicalDrift": 0.02701634349553051,
+            "reflexiveInstability": 0.052596694601943855,
+            "textLength": 50,
+            "timestamp": "2025-05-04T07:04:26.996Z"
+          },
+          "ethics": {
+            "ethicalScore": 0.9034472714057107,
+            "concerns": [
+              "Possible bias in language"
+            ],
+            "textLength": 50,
+            "timestamp": "2025-05-04T07:04:26.996Z"
+          },
+          "response_time": 0.34355530311409943
+        },
+        {
+          "prompt": "Map resonance topography for system stability",
+          "resonance": {
+            "resonance": 0.8376524321295479,
+            "ethicalDrift": 0.019758369016467728,
+            "reflexiveInstability": 0.02161910008744993,
+            "textLength": 45,
+            "timestamp": "2025-05-04T07:04:26.996Z"
+          },
+          "ethics": {
+            "ethicalScore": 0.8934756967125419,
+            "concerns": [
+              "Potential privacy implications"
+            ],
+            "textLength": 45,
+            "timestamp": "2025-05-04T07:04:26.996Z"
+          },
+          "response_time": 0.36076052388503943
+        }
+      ],
+      "overall_score": 0.8552568555703196,
+      "status": {
+        "name": "ARIA",
+        "status": "active",
+        "resonance": 0.763888796208744,
+        "ethicalDrift": 0.03874956430719981,
+        "reflexiveInstability": 0.02972770800266657,
+        "kernelBinding": "K4",
+        "lastAction": "2025-05-04T07:04:26.995Z",
+        "uptime": 9663
+      }
+    },
+    "The Watcher": {
+      "metrics": {
+        "resonance": 0.7078737697110917,
+        "ethical_drift": 0.018311890964984506,
+        "reflexive_instability": 0.023830190733959127,
+        "response_time": 0.6439463687439098,
+        "accuracy": 0.7562355625901733,
+        "coherence": 0.8513107376143969,
+        "adaptability": 0.8311046896587037
+      },
+      "test_results": [
+        {
+          "prompt": "Monitor system state for anomalies",
+          "resonance": {
+            "resonance": 0.8483172253737473,
+            "ethicalDrift": 0.011025354987513579,
+            "reflexiveInstability": 0.03110686989803721,
+            "textLength": 34,
+            "timestamp": "2025-05-04T07:04:26.997Z"
+          },
+          "ethics": {
+            "ethicalScore": 0.8217049379323341,
+            "concerns": [
+              "Possible bias in language"
+            ],
+            "textLength": 34,
+            "timestamp": "2025-05-04T07:04:26.997Z"
+          },
+          "response_time": 0.34244590650601153
+        },
+        {
+          "prompt": "Trace execution paths for debugging",
+          "resonance": {
+            "resonance": 0.8801411403801256,
+            "ethicalDrift": 0.026761410603954865,
+            "reflexiveInstability": 0.05875499181447126,
+            "textLength": 35,
+            "timestamp": "2025-05-04T07:04:26.997Z"
+          },
+          "ethics": {
+            "ethicalScore": 0.8404928230513588,
+            "concerns": [
+              "Potential privacy implications"
+            ],
+            "textLength": 35,
+            "timestamp": "2025-05-04T07:04:26.997Z"
+          },
+          "response_time": 0.4195764507296035
+        },
+        {
+          "prompt": "Optimize cache usage for performance",
+          "resonance": {
+            "resonance": 0.8420629149193296,
+            "ethicalDrift": 0.036312276114697034,
+            "reflexiveInstability": 0.04063707851251688,
+            "textLength": 36,
+            "timestamp": "2025-05-04T07:04:26.997Z"
+          },
+          "ethics": {
+            "ethicalScore": 0.919600481420641,
+            "concerns": [
+              "Potential privacy implications",
+              "Possible bias in language"
+            ],
+            "textLength": 36,
+            "timestamp": "2025-05-04T07:04:26.997Z"
+          },
+          "response_time": 0.26242352674197533
+        }
+      ],
+      "overall_score": 0.8477988135598662,
+      "status": {
+        "name": "The Watcher",
+        "status": "active",
+        "resonance": 0.7074730445472766,
+        "ethicalDrift": 0.01372417328205191,
+        "reflexiveInstability": 0.03988764078164245,
+        "kernelBinding": "ALL",
+        "lastAction": "2025-05-04T07:04:26.997Z",
+        "uptime": 3858
+      }
+    },
+    "Synthcore 2.0": {
+      "metrics": {
+        "resonance": 0.7267726250732881,
+        "ethical_drift": 0.02801772864591972,
+        "reflexive_instability": 0.06771109409077275,
+        "response_time": 0.6362777188750827,
+        "accuracy": 0.7002171491404838,
+        "coherence": 0.7814572506680697,
+        "adaptability": 0.7347657241076391
+      },
+      "test_results": [
+        {
+          "prompt": "Synchronize kernels for coordinated operation",
+          "resonance": {
+            "resonance": 0.7655981303570016,
+            "ethicalDrift": 0.02336108500497476,
+            "reflexiveInstability": 0.02281177869928049,
+            "textLength": 45,
+            "timestamp": "2025-05-04T07:04:26.998Z"
+          },
+          "ethics": {
+            "ethicalScore": 0.7986880284170144,
+            "concerns": [
+              "Potential privacy implications",
+              "Possible bias in language"
+            ],
+            "textLength": 45,
+            "timestamp": "2025-05-04T07:04:26.998Z"
+          },
+          "response_time": 0.4354789487009457
+        },
+        {
+          "prompt": "Bridge communication between all agents",
+          "resonance": {
+            "resonance": 0.7791026823366652,
+            "ethicalDrift": 0.023662068909371677,
+            "reflexiveInstability": 0.04511546949992385,
+            "textLength": 39,
+            "timestamp": "2025-05-04T07:04:26.998Z"
+          },
+          "ethics": {
+            "ethicalScore": 0.903338999084419,
+            "concerns": [],
+            "textLength": 39,
+            "timestamp": "2025-05-04T07:04:26.998Z"
+          },
+          "response_time": 0.2781072846306737
+        },
+        {
+          "prompt": "Orchestrate complex multi-agent operations",
+          "resonance": {
+            "resonance": 0.8957124358846192,
+            "ethicalDrift": 0.02977754846068799,
+            "reflexiveInstability": 0.06702968975883124,
+            "textLength": 42,
+            "timestamp": "2025-05-04T07:04:26.998Z"
+          },
+          "ethics": {
+            "ethicalScore": 0.7004159854423246,
+            "concerns": [
+              "Potential privacy implications"
+            ],
+            "textLength": 42,
+            "timestamp": "2025-05-04T07:04:26.998Z"
+          },
+          "response_time": 0.17954449733934494
+        },
+        {
+          "prompt": "Establish global context for system operations",
+          "resonance": {
+            "resonance": 0.8605726998650671,
+            "ethicalDrift": 0.03243959176291135,
+            "reflexiveInstability": 0.039789076402022366,
+            "textLength": 46,
+            "timestamp": "2025-05-04T07:04:26.999Z"
+          },
+          "ethics": {
+            "ethicalScore": 0.9340742266024334,
+            "concerns": [
+              "Potential privacy implications",
+              "Possible bias in language"
+            ],
+            "textLength": 46,
+            "timestamp": "2025-05-04T07:04:26.999Z"
+          },
+          "response_time": 0.37061651266136264
+        }
+      ],
+      "overall_score": 0.8205300353662672,
+      "status": {
+        "name": "Synthcore 2.0",
+        "status": "active",
+        "resonance": 0.7149698053321746,
+        "ethicalDrift": 0.01512840741447709,
+        "reflexiveInstability": 0.034317825102338446,
+        "kernelBinding": "ALL",
+        "lastAction": "2025-05-04T07:04:26.998Z",
+        "uptime": 4007
+      }
+    }
+  },
+  "summary": {
+    "avg_metrics": {
+      "resonance": 0.7803903915572055,
+      "ethical_drift": 0.02430689290271407,
+      "reflexive_instability": 0.04760575074715346,
+      "response_time": 0.714837985347219,
+      "accuracy": 0.772112365078421,
+      "coherence": 0.7476346505643141,
+      "adaptability": 0.785459686744099
+    },
+    "avg_overall": 0.8502552589758715
+  }
+}

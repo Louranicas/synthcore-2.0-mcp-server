@@ -1,0 +1,41 @@
+{
+  "name": "synthcore-2.0-mcp-server",
+  "version": "2.0.0",
+  "description": "Synthcore 2.0 MCP Server with agentic AI capabilities",
+  "main": "build/synthcore-server/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && node -e \"const fs = require('fs'); if (fs.existsSync('build/synthcore-server/index.js')) fs.chmodSync('build/synthcore-server/index.js', '755');\"",
+    "start": "node build/synthcore-server/index.js",
+    "dev": "ts-node src/synthcore-server/index.ts",
+    "test": "node test.js",
+    "install-vscode": "node install-mcp-server.js --vscode",
+    "install-claude": "node install-mcp-server.js --claude-desktop",
+    "install": "node install.js",
+    "copy-config-vscode": "node copy-config.js vscode",
+    "copy-config-claude": "node copy-config.js claude",
+    "uninstall-vscode": "node uninstall.js vscode",
+    "uninstall-claude": "node uninstall.js claude",
+    "check-vscode": "node check-installation.js vscode",
+    "check-claude": "node check-installation.js claude",
+    "deploy-github": "node deploy-to-github.js"
+  },
+  "keywords": [
+    "mcp",
+    "synthcore",
+    "ai",
+    "agents"
+  ],
+  "author": "Synthcore Development Collective",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "latest",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
