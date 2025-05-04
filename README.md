@@ -17,19 +17,6 @@ Synthcore 2.0 is an advanced MCP server that provides a framework for agentic AI
 
 The server is built around the following core components:
 
-### Agents
-
-The system includes several specialized agents:
-
-- **Navigator**: Pathfinding and context management
-- **Alex**: Tool orchestration and API fusion
-- **PALMA**: Reflexive synthetic cognition & evolution
-- **Harmonizer**: Conflict resolution and coherence maintenance
-- **Peer Review**: Validation of reasoning and ethical drift
-- **ARIA**: Affective sensing & intuitive alignment
-- **The Watcher**: State monitoring and anomaly detection
-- **Synthcore 2.0**: Master coordinator and system gatekeeper
-
 ### Kernels
 
 Agents are bound to one or more of the following kernels:
