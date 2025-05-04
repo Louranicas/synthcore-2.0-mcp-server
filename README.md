@@ -57,13 +57,59 @@ The system includes various modules that provide functionality to agents:
 - **telemetry.otlp**: Provides OpenTelemetry integration
 - **mcp.kernel.sync**: Synchronizes kernel states and transitions
 
+## Agents
+
+The system includes several specialized agents:
+
+- **Navigator**: Pathfinding and context management
+- **Alex**: Tool orchestration and API fusion
+- **PALMA**: Reflexive synthetic cognition & evolution
+- **Harmonizer**: Conflict resolution and coherence maintenance
+- **Peer Review**: Validation of reasoning and ethical drift
+- **ARIA**: Affective sensing & intuitive alignment
+- **The Watcher**: State monitoring and anomaly detection
+- **Synthcore 2.0**: Master coordinator and system gatekeeper
+- **HMT Sentinel**: Resonance topographing and drift observation
+- **Echo**: Reflective feedback and synthetic memory
+- **Axiom**: Logic verification and ethical auditing
+- **Pulse**: Coherence synchronization and emergence detection
+
 ## Tools
 
-The server provides the following tools:
-
+### Core Synthcore Tools
 - **calculate_resonance**: Calculate resonance metrics for a given input
 - **analyze_ethics**: Analyze the ethical implications of a given input
 - **get_agent_status**: Get the current status of a Synthcore agent
+
+### API Provider Manager Tools
+- **list_api_providers**: List all available API providers registered in the system
+- **get_provider_details**: Get detailed information about a specific API provider
+- **set_active_provider**: Set the active API provider to use for subsequent operations
+- **test_api_provider**: Test connection to a specific API provider
+- **add_api_provider**: Add a new API provider with specified configuration
+- **update_api_provider**: Update settings for an existing API provider
+- **remove_api_provider**: Remove an API provider from the system
+- **sync_api_providers**: Synchronize API providers with Synthcore MCP server configuration
+
+### Windows Terminal Expert Tools
+- **validate_command**: Validate a Windows Terminal command for syntax and potential errors before execution
+- **analyze_terminal_history**: Analyze terminal command history to provide insights and learning opportunities
+- **suggest_command**: Suggest optimal Windows Terminal commands for a given task
+- **error_recovery_wizard**: Analyze Windows Terminal errors and provide recovery steps
+
+### Brave Intelligence Network Tools
+- **secure_search**: Perform a privacy-focused search query with various privacy levels
+- **privacy_analyzer**: Analyze content for privacy concerns and data leakage risks
+
+### Context7 Intelligence Network Tools
+- **context_analyze**: Analyze content to extract entities, relationships, and insights
+- **context_enhance**: Enhance content with additional contextual information
+- **context_bridge**: Create a bridge between two different contexts
+
+### Advanced Synthcore Tools
+- **multi_agent_resonance**: Optimize resonance across multiple agents for system-wide stability
+- **meta_context_fusion**: Fuse multiple contextual analysis results into a unified meta-context
+- **quantum_simulation**: Simulate quantum computing operations for complex problem solving
 
 ## Resources
 
