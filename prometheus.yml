@@ -1,0 +1,67 @@
+# Prometheus Configuration File (prometheus.yml) - Placeholder
+
+# Global configurations
+global:
+  scrape_interval:     15s # Default scrape interval
+  evaluation_interval: 15s # Default evaluation interval for rules
+  # scrape_timeout is set to the global default (10s).
+
+# Alertmanager configuration (if using Alertmanager for alerts)
+# alerting:
+#   alertmanagers:
+#     - static_configs:
+#         - targets:
+#           # - alertmanager:9093 # Example Alertmanager endpoint
+
+# Rule files for recording and alerting rules
+# rule_files:
+#   - "alert.rules.yml" # Example rule file
+#   # - "second_rules.yml"
+
+# A list of scrape configurations.
+scrape_configs:
+  # Job to scrape Prometheus itself (metamonitoring)
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090'] # Prometheus default port
+
+  # Placeholder for Backend (Flask/Gunicorn) Application
+  # - job_name: 'flask-backend'
+  #   # Assuming the backend application exposes metrics on /metrics endpoint
+  #   # This requires a Flask metrics exporter library (e.g., prometheus_flask_exporter)
+  #   # The target would be the address of the backend container(s) or service.
+  #   metrics_path: /metrics
+  #   static_configs:
+  #     - targets: ['flask-backend-container:5001'] # Example: Docker container name and port
+  #     # For dynamic environments (e.g., Kubernetes, Docker Swarm), use service discovery:
+  #     # kubernetes_sd_configs:
+  #     #   - role: pod 
+  #     #     # ... more Kubernetes specific configs ...
+  #     # docker_sd_configs:
+  #     #   - host: unix:///var/run/docker.sock
+  #     #     # ... more Docker specific configs ...
+
+  # Placeholder for Frontend (Nginx) Metrics
+  # - job_name: 'nginx-frontend'
+  #   # Nginx metrics can be exposed using an exporter like nginx-prometheus-exporter
+  #   # or Nginx's ngx_http_stub_status_module (less detailed).
+  #   # The target would be the address of the Nginx container(s) or service.
+  #   static_configs:
+  #     - targets: ['react-frontend-container:80'] # Example: Docker container name and port
+  #     # If using nginx-prometheus-exporter, it might expose metrics on a different port/path:
+  #     # metrics_path: /metrics 
+  #     # - targets: ['nginx-exporter-container:9113'] # Example exporter target
+
+  # Placeholder for Database Metrics (e.g., PostgreSQL exporter)
+  # - job_name: 'postgres-db'
+  #   # Requires a specific exporter for the database type (e.g., pg_exporter for PostgreSQL)
+  #   static_configs:
+  #     - targets: ['postgres-exporter:9187'] # Example exporter target
+
+# Notes for a real setup:
+# - Replace placeholder targets with actual service discovery or static IPs/hostnames.
+# - Ensure applications/exporters are configured to expose metrics in Prometheus format.
+# - Configure service discovery appropriate for your deployment environment (Docker, Kubernetes, etc.).
+# - Define alerting rules in separate rule files and link them here.
+# - Set up Alertmanager for handling alerts.
+# - Secure Prometheus and exporter endpoints if exposed externally.

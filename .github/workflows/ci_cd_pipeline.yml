@@ -1,0 +1,91 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main ] # Or your primary branch, e.g., master
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.10' # Match backend Python version
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18' # Match frontend Node.js version
+
+      # Backend Steps
+      - name: Install backend dependencies
+        run: |
+          cd backend
+          pip install -r requirements.txt
+      
+      - name: Run backend tests
+        run: |
+          cd backend
+          python -m unittest discover -s tests -p "test_*.py" # Adjusted from previous findings
+
+      # Frontend Steps
+      - name: Install frontend dependencies and build
+        run: |
+          cd frontend
+          npm ci 
+          npm run build # Build static files
+
+      - name: Run frontend tests
+        # Ensure Jest and its dependencies are installed via npm ci
+        # The package.json should have a "test": "jest" script
+        run: |
+          cd frontend
+          npm test
+
+      # Docker Build Steps (conceptual, as registry push is not implemented here)
+      - name: Build backend Docker image
+        run: |
+          cd backend
+          docker build -t flask-backend-app:${{ github.sha }} .
+          # In a real pipeline, you would push this to a registry:
+          # docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+          # docker push your-registry/flask-backend-app:${{ github.sha }}
+
+      - name: Build frontend Docker image
+        run: |
+          cd frontend
+          docker build -t react-frontend-app:${{ github.sha }} .
+          # In a real pipeline, you would push this to a registry:
+          # docker push your-registry/react-frontend-app:${{ github.sha }}
+      
+      # Deployment Steps (conceptual)
+      # These steps would typically involve SSHing into servers, using kubectl for Kubernetes,
+      # or interacting with cloud provider APIs (e.g., AWS ECS, Azure Web Apps, Google Cloud Run).
+      - name: Deploy to Staging (Conceptual)
+        if: github.ref == 'refs/heads/main' # Example: deploy main branch pushes
+        run: |
+          echo "Conceptual: Deploying to staging environment..."
+          # Example: ssh user@staging-server 'cd /path/to/app && ./deploy_staging.sh ${{ github.sha }}'
+
+      - name: Deploy to Production (Conceptual - Manual Trigger or Different Workflow)
+        # Production deployments are often triggered manually or from a release branch/tag.
+        # This is a placeholder for where such logic might go.
+        if: false # Never run automatically in this example
+        run: |
+          echo "Conceptual: Deploying to production environment..."
+          # Example: ssh user@production-server 'cd /path/to/app && ./deploy_production.sh ${{ github.sha }}'
+
+# Notes for a real pipeline:
+# - Secrets Management: Use GitHub secrets for Docker registry credentials, API keys, SSH keys.
+# - Database Migrations: Add steps for running database migrations if applicable.
+# - Environment Variables: Inject environment-specific variables into containers during deployment.
+# - Caching: Cache dependencies (pip, npm) to speed up builds.
+# - Linting/Static Analysis: Add steps for code quality checks.
+# - Multi-environment deployment: Use different secrets/configurations for staging vs. production.
